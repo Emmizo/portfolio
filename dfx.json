@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "portfolioBlockChain_backend": {
+      "main": "src/portfolioBlockChain_backend/main.mo",
+      "type": "motoko"
+    },
+    "portfolioBlockChain_frontend": {
+      "dependencies": [
+        "portfolioBlockChain_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/portfolioBlockChain_frontend/src/index.html"
+      },
+      "source": [
+        "src/portfolioBlockChain_frontend/assets",
+        "dist/portfolioBlockChain_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
