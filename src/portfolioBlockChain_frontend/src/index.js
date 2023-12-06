@@ -17,3 +17,8 @@ document.querySelector("form").addEventListener("submit", async (e) => {
 
   return false;
 });
+// test submit button on certificate check
+document.querySelector("submitcertiid").addEventListener("click", async (e) => {
+  const certid = document.getElementById("certificate").value;
+  console.log("certificate id: ",certid);
+})
